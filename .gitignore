@@ -1,2 +1,4 @@
 aws-secret2.yaml
 env-secret.yaml
+node_modules
+set_env.sh
