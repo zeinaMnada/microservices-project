@@ -1,3 +1,4 @@
 aws-secret.yaml
 env-secret.yaml
 set_env.sh
+node_modules
