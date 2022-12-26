@@ -15,16 +15,16 @@ spec:
         service: udagram-api-feed
     spec:
       containers:
-      - image: omarzztelcocloud/udagram-api-feed:v5
+      - image: zeinamnada/udagram-api-feed:v1
         name: udagram-api-feed
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
         envFrom:
           - secretRef:
-              name: envsecret
+              name: env-secret
           - configMapRef:
-              name: envconfigmap
+              name: env-configmap
         volumeMounts:
         - name: aws-config-volume
           mountPath: /root/.aws
@@ -32,6 +32,4 @@ spec:
       volumes:
         - name: aws-config-volume
           secret:
-            secretName: aws-secret2
-
-
+            secretName: aws-secret

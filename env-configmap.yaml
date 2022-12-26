@@ -1,12 +1,7 @@
-POSTGRES_USERNAME=postgres
-POSTGRES_PASSWORD=udagrampsql
 POSTGRES_DB=postgres
-POSTGRES_HOST=udagram.ciihtwafv6ls.us-east-1.rds.amazonaws.com
+POSTGRES_HOST=udagram.cl53f31g08tx.us-east-1.rds.amazonaws.com
 URL=http://localhost:8080
-AWS_BUCKET=udagram-756977691167
+AWS_BUCKET=udagram-885688554592
 AWS_REGION= us-east-1
 AWS_PROFILE=default
 JWT_SECRET=testing
-
-
-

@@ -15,13 +15,13 @@ spec:
         service: udagram-api-user
     spec:
       containers:
-      - image: omarzztelcocloud/udagram-api-user:v4
+      - image: zeinamnada/udagram-api-user:v1
         name: udagram-api-user
         envFrom:
           - configMapRef:
-              name: envconfigmap
+              name: env-configmap
           - secretRef:
-              name: envsecret
+              name: env-secret
         imagePullPolicy: Always
         resources:
           requests:
